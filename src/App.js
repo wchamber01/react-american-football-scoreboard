@@ -28,6 +28,7 @@ function App() {
         <BottomRow />
       </section>
       <section className="buttons">
+        <button onClick = {() => {setHomeScore(0); setAwayScore(0);}}>Reset</button>
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button onClick = {() => setHomeScore(homeScore + 7)} className="homeButtons__touchdown">Home Touchdown</button>
